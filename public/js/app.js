@@ -1,5 +1,5 @@
-import { hideAllMenus, toggleMenu } from './utils/menu-utils.js';
-import { getController } from './utils/search-enggine.js';
+import { hideAllMenus, toggleMenu } from '/js/utils/menu-utils.js';
+import { getController } from '/js/utils/search-enggine.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menu-btn');

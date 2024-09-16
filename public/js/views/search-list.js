@@ -1,4 +1,4 @@
-import { toggleMenu } from "../utils/menu-utils.js";
+import { toggleMenu } from "/js/utils/menu-utils.js";
 
 document.addEventListener('DOMContentLoaded', function(){
     const mobileFilter = document.getElementById('mobile-filter');
