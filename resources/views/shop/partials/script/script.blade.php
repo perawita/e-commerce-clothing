@@ -1,9 +1,12 @@
 @yield('script')
 
+{{-- <script type="module" src={{ asset('js/app.js') }}></script> --}}
+
+@push('scripts')
 <script type="module">
     import { getController } from '{{ asset('js/utils/search-enggine.js') }}';
     import { toggleMenu } from '{{ asset('js/utils/menu-utils.js') }}';
-    
+
     document.addEventListener('DOMContentLoaded', () => {
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -11,8 +14,8 @@
         const menuLogin = document.getElementById('menu-login');
         const userBtn = document.getElementById('user-btn');
         const userMenu = document.getElementById('menu-user');
-        const searchEnggine = document.getElementById('search-enggine')
-        const searchMenu = document.getElementById('menu-search')
+        const searchEnggine = document.getElementById('search-enggine');
+        const searchMenu = document.getElementById('menu-search');
         const titleSearchEnggine = document.getElementById('title-for-search');
         const resultMenu = document.getElementById('result-for-search');
 
@@ -52,7 +55,7 @@
         }
 
         /**
-         * Function to attach search enggine toggle behavior to buttons dynamically
+         * Function to attach search engine toggle behavior to buttons dynamically
          * @param {HTMLElement} button - The button that toggles the menu
          * @param {HTMLElement} menu - The menu that is toggled
          */
@@ -74,25 +77,22 @@
         // Attach the toggle behavior to all existing buttons
         attachMenuToggle(menuBtn, mobileMenu);
         attachMenuToggle(loginBtn, menuLogin);
-
         attachSearchToggle(searchEnggine, searchMenu);
         if (userBtn && userMenu) {
             attachMenuToggle(userBtn, userMenu);
         }
 
-
-        // Close menu if in outside from element menu and if inside main element
+        // Close menu if clicked outside
         document.getElementById('main').addEventListener('click', function(event) {
             allMenus.forEach(menu => {
                 if (menu) {
                     const isClickInsideMenu = menu.contains(event.target);
-
                     if (!isClickInsideMenu) {
                         menu.classList.add('hidden');
                     }
                 }
-                return null;
             });
         });
     });
 </script>
+@endpush
