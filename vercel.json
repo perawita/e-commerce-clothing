@@ -15,6 +15,13 @@
             "dest": "/api/index.php"
         }
     ],
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "destination": "https://e-commerce-clothing-tau.vercel.app/$1",
+        "permanent": true
+      }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
