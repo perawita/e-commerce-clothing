@@ -93,7 +93,7 @@
             <div class="block lg:hidden">
                 <button id="menu-btn" class="text-gray-600 focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        class="w-8 h-8 md:w-10 md:h-10">
+                        class="w-8 h-8">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
