@@ -5,3 +5,4 @@
     @include('shop.content.shopping-check-out.partials.article')
 
 @endsection
+
