@@ -1,0 +1,1 @@
+<script type="module" src={{ asset('js/views/search-list.js') }}></script>

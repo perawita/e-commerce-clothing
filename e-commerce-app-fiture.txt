@@ -1,0 +1,51 @@
+Rancangan aplikasi design aplikasi
+Aplikasi e-commerce clothing sederhana berbasi website yang
+fokus utamanya sebagai media penjualan pakaian untuk satu toko
+
+Fiture aplikasi
+user
+- Home*
+	*home
+		- Produk populer
+		- Produk terbaru
+		- Pencarian produk
+- Profile*
+	*profile
+		- Edit profile
+		- Edit akun
+		- Log out
+- Keranjang*
+	*keranjang
+		- List produk
+		- Pesan
+- Produk*
+	*produk
+		- Foto thumbnail
+		- Deskripsi
+		- Rating produk
+		- Komentar produk
+		- List produk serupa
+		- Pesan*
+			*pesan
+				- Alamat
+				- Pembayaran
+				- Pesan
+		- Masukan keranjang
+- Login
+- Register
+
+admin
+- Dashboard*
+	*dashboard
+		- Grafik kategori
+		- Grafik produk
+		- Kelola pesanan
+- List user * Read
+- Kelola kategori * CRUD
+- Kelola produk * CRUD
+- Kelola komentar * Read
+- CMS*
+	*CMS
+		- Kelola halaman produk * Update
+		- Kelola halaman home * Update
+
