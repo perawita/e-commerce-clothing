@@ -1,5 +1,3 @@
-const results = document.getElementById('result-for-search');
-
 export function getController(getInput, getTitle, getMenu) {
     const input = getInput;
     const title = getTitle;
