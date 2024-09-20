@@ -35,7 +35,10 @@ Route::get('/admin/dashboard', function(){
 })->name('admin.index');
 
 
-// Tolong hapus script ini dan gunakan di dalam route api
+//  Tolong hapus script ini dan gunakan di dalam route api
+//  gunakan url /auth/example/condiction
+//  example /auth/google/callback
+//  gunakan penulisan tersebut
 use App\Http\Controllers\SocialLoginController;
 Route::get('/api/auth/redirect', [SocialLoginController::class, 'redirect']);
 Route::get('/api/auth/callback', [SocialLoginController::class, 'callback']);
