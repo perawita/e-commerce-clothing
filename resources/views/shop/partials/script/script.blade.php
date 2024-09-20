@@ -1,7 +1,9 @@
 @yield('script')
 
+{{-- Buka comment ini ketika di hosting sudah kembali normal --}}
 {{-- <script type="module" src={{ asset('js/app.js') }}></script> --}}
 
+{{-- Hapus bagian ini jika saat di hosting sudah kembali normal --}}
 <script type="module">
     export function getController(getInput, getTitle, getMenu) {
         const input = getInput;
@@ -202,3 +204,4 @@
         });
     });
 </script>
+{{-- Hapus sampai sini --}}
