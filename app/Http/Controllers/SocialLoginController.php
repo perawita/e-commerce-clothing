@@ -10,7 +10,7 @@ class SocialLoginController extends Controller{
     }
 
     public function callback(){
-        $users = Socialite::drive('google')->user();
+        $users = Socialite::driver('google')->user();
         return dd($users);
     }
 }
