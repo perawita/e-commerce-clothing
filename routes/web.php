@@ -40,6 +40,6 @@ Route::get('/admin/dashboard', function(){
 //  example /auth/google/callback
 //  gunakan penulisan tersebut
 use App\Http\Controllers\SocialLoginController;
-Route::get('/api/auth/redirect', [SocialLoginController::class, 'redirect']);
-Route::get('/api/auth/callback', [SocialLoginController::class, 'callback']);
+Route::get('/auth/google/redirect', [SocialLoginController::class, 'redirect']);
+Route::get('/auth/google/callback', [SocialLoginController::class, 'callback']);
 // Hapus sampai sini
