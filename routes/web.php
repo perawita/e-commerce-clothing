@@ -29,3 +29,7 @@ Route::post('/shoping/checkout/confirm/{id_user}', [CheckOutController::class, '
 Route::get('/shoping/profile/{id_user}', [ProfileController::class, 'profile'])->name('shoping.profile.index');
 Route::get('/shoping/{id_user}/orders/{id_invoice}/progress', [OrderController::class, 'orders'])->name('shoping.orders.index');
 Route::get('/shoping/settings/{id_user}', [SettingController::class, 'settings'])->name('shoping.settings.index');
+
+Route::get('/admin/dashboard', function(){
+    return 'You in dashboard';
+})->name('admin.index');
