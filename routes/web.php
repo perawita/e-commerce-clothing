@@ -33,3 +33,10 @@ Route::get('/shoping/settings/{id_user}', [SettingController::class, 'settings']
 Route::get('/admin/dashboard', function(){
     return 'You in dashboard';
 })->name('admin.index');
+
+
+// Tolong hapus script ini dan gunakan di dalam route api
+use App\Http\Controllers\SocialLoginController;
+Route::get('/api/auth/redirect', [SocialLoginController::class, 'redirect']);
+Route::get('/api/auth/callback', [SocialLoginController::class, 'callback']);
+// Hapus sampai sini
